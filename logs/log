@@ -1,0 +1,42 @@
+[2020-12-02T13:46:36.293] [ERROR] system - Error: duplicate key value violates unique constraint "users_username_key"
+    at Object.generic (/home/pomka/dev/meters-server/node_modules/postgres/lib/types.js:200:5)
+    at Object.ErrorResponse (/home/pomka/dev/meters-server/node_modules/postgres/lib/backend.js:124:33)
+    at Socket.data (/home/pomka/dev/meters-server/node_modules/postgres/lib/connection.js:167:25)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (username)=(pomkalk) already exists.',
+  schema_name: 'public',
+  table_name: 'users',
+  constraint_name: 'users_username_key',
+  file: 'nbtinsert.c',
+  line: '656',
+  routine: '_bt_check_unique'
+}
+[2020-12-02T13:46:45.824] [INFO] system - Start import init data
+[2020-12-02T13:46:45.869] [ERROR] system - Error: duplicate key value violates unique constraint "users_username_key"
+    at Object.generic (/home/pomka/dev/meters-server/node_modules/postgres/lib/types.js:200:5)
+    at Object.ErrorResponse (/home/pomka/dev/meters-server/node_modules/postgres/lib/backend.js:124:33)
+    at Socket.data (/home/pomka/dev/meters-server/node_modules/postgres/lib/connection.js:167:25)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (username)=(pomkalk) already exists.',
+  schema_name: 'public',
+  table_name: 'users',
+  constraint_name: 'users_username_key',
+  file: 'nbtinsert.c',
+  line: '656',
+  routine: '_bt_check_unique'
+}
+[2020-12-02T13:46:45.871] [INFO] system - Import complete
