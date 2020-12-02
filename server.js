@@ -9,8 +9,6 @@ const fs = require('fs')
 const app = new Koa()
 const adminRouter = new Router()
 
-console.log(env)
-
 app.use(Static(env.admindir))
 
 
