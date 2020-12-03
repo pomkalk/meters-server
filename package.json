@@ -23,6 +23,6 @@
   },
   "scripts": {
     "init-import": "node tools/import-init-data.js",
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js"
   }
 }

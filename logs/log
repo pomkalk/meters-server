@@ -1,42 +1,100 @@
-[2020-12-02T13:46:36.293] [ERROR] system - Error: duplicate key value violates unique constraint "users_username_key"
-    at Object.generic (/home/pomka/dev/meters-server/node_modules/postgres/lib/types.js:200:5)
-    at Object.ErrorResponse (/home/pomka/dev/meters-server/node_modules/postgres/lib/backend.js:124:33)
-    at Socket.data (/home/pomka/dev/meters-server/node_modules/postgres/lib/connection.js:167:25)
-    at Socket.emit (events.js:314:20)
-    at addChunk (_stream_readable.js:297:12)
-    at readableAddChunk (_stream_readable.js:272:9)
-    at Socket.Readable.push (_stream_readable.js:213:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
-  severity_local: 'ERROR',
-  severity: 'ERROR',
-  code: '23505',
-  detail: 'Key (username)=(pomkalk) already exists.',
-  schema_name: 'public',
-  table_name: 'users',
-  constraint_name: 'users_username_key',
-  file: 'nbtinsert.c',
-  line: '656',
-  routine: '_bt_check_unique'
-}
-[2020-12-02T13:46:45.824] [INFO] system - Start import init data
-[2020-12-02T13:46:45.869] [ERROR] system - Error: duplicate key value violates unique constraint "users_username_key"
-    at Object.generic (/home/pomka/dev/meters-server/node_modules/postgres/lib/types.js:200:5)
-    at Object.ErrorResponse (/home/pomka/dev/meters-server/node_modules/postgres/lib/backend.js:124:33)
-    at Socket.data (/home/pomka/dev/meters-server/node_modules/postgres/lib/connection.js:167:25)
-    at Socket.emit (events.js:314:20)
-    at addChunk (_stream_readable.js:297:12)
-    at readableAddChunk (_stream_readable.js:272:9)
-    at Socket.Readable.push (_stream_readable.js:213:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
-  severity_local: 'ERROR',
-  severity: 'ERROR',
-  code: '23505',
-  detail: 'Key (username)=(pomkalk) already exists.',
-  schema_name: 'public',
-  table_name: 'users',
-  constraint_name: 'users_username_key',
-  file: 'nbtinsert.c',
-  line: '656',
-  routine: '_bt_check_unique'
-}
-[2020-12-02T13:46:45.871] [INFO] system - Import complete
+[2020-12-03T16:26:54.534] [INFO] auth - socket login: G-rWvDf-umB1dqu0AAAN - username: pomkalk
+[2020-12-03T16:26:54.601] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:27:01.530] [INFO] system - socket connected: zkcD6JBimLrqUs8TAAAP
+[2020-12-03T16:27:01.951] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc2MTQsImV4cCI6MTYwNzA3NDAxNH0.k08DuvRwiS6f3lTX4H9jqqN2yWx7cbuLuOzsVytlTms
+[2020-12-03T16:29:48.213] [INFO] server - Database connected
+[2020-12-03T16:29:48.229] [INFO] system - Server started on port 3000
+[2020-12-03T16:29:49.034] [INFO] system - socket connected: l2ZSCoaGwV8mRIcMAAAB
+[2020-12-03T16:29:53.740] [INFO] system - socket connected: _aDWmtvxlde2WON_AAAD
+[2020-12-03T16:29:54.186] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc2MTQsImV4cCI6MTYwNzA3NDAxNH0.k08DuvRwiS6f3lTX4H9jqqN2yWx7cbuLuOzsVytlTms
+[2020-12-03T16:29:54.236] [ERROR] auth - TypeError: Cannot read property 'id' of undefined
+    at Api.authenticate (/home/pomka/dev/meters-app/meters-server/lib/api/index.js:73:26)
+    at Api.restore (/home/pomka/dev/meters-app/meters-server/lib/api/index.js:110:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-12-03T16:30:58.281] [INFO] server - Database connected
+[2020-12-03T16:30:58.298] [INFO] system - Server started on port 3000
+[2020-12-03T16:30:58.633] [INFO] system - socket connected: 5vLXaqXwzqAgbKhcAAAB
+[2020-12-03T16:31:47.880] [INFO] server - Database connected
+[2020-12-03T16:31:47.898] [INFO] system - Server started on port 3000
+[2020-12-03T16:31:48.971] [INFO] system - socket connected: Xfna7srCeDyiVtDhAAAB
+[2020-12-03T16:31:51.867] [INFO] system - socket connected: SB6mGUe54qdoLy12AAAD
+[2020-12-03T16:31:59.609] [INFO] auth - socket login: SB6mGUe54qdoLy12AAAD - username: pomkalk
+[2020-12-03T16:31:59.685] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:32:03.835] [INFO] system - socket connected: rwLm3qzXWQ8Iq628AAAF
+[2020-12-03T16:32:04.292] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5MTksImV4cCI6MTYwNzA3NDMxOX0._XSX_gr0rqq-JHRFT2SR60qvTtmom7xkoHaE0owzopk
+[2020-12-03T16:32:04.298] [WARN] auth - user restore not found: undefined
+[2020-12-03T16:32:23.677] [INFO] server - Database connected
+[2020-12-03T16:32:23.693] [INFO] system - Server started on port 3000
+[2020-12-03T16:32:24.674] [INFO] system - socket connected: NDcp8mhJjAtXIkU4AAAB
+[2020-12-03T16:32:25.829] [INFO] system - socket connected: 8jtIbeY128fGusPxAAAD
+[2020-12-03T16:32:29.948] [INFO] auth - socket login: 8jtIbeY128fGusPxAAAD - username: pomkalk
+[2020-12-03T16:32:30.023] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:32:32.010] [INFO] system - socket connected: LnmF83QntnWBmvHjAAAF
+[2020-12-03T16:32:32.511] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NTAsImV4cCI6MTYwNzA3NDM1MH0.DixqgPHA3blzJJoAxwYAXKmOBOmgOlZ1fXSrQCNdUY4
+[2020-12-03T16:32:32.518] [WARN] auth - user restore not found: undefined
+[2020-12-03T16:32:38.661] [INFO] server - Database connected
+[2020-12-03T16:32:38.678] [INFO] system - Server started on port 3000
+[2020-12-03T16:32:39.394] [INFO] system - socket connected: c1S1ngjVz7dOFcApAAAB
+[2020-12-03T16:32:41.588] [INFO] system - socket connected: oN5mrXcOpwuJ0iCAAAAD
+[2020-12-03T16:32:46.105] [INFO] auth - socket login: oN5mrXcOpwuJ0iCAAAAD - username: pomkalk
+[2020-12-03T16:32:46.177] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:32:48.775] [INFO] system - socket connected: FDIY7Ipqlp5vo-UsAAAF
+[2020-12-03T16:32:49.278] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NjYsImV4cCI6MTYwNzA3NDM2Nn0.WIifHrbETkn0UR-eAt5Ps6pgLJ_UZS-7WYCTqNLe5JQ
+[2020-12-03T16:32:49.563] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:32:55.841] [INFO] system - socket connected: zBe6SpdG_Y-FEv8zAAAH
+[2020-12-03T16:32:56.355] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NjksImV4cCI6MTYwNzA3NDM2OX0.SELm7O5-qwdb7ZWJj9aKub09erXpPmKcq-YPA5Y3yfc
+[2020-12-03T16:32:56.360] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:34:46.109] [INFO] server - Database connected
+[2020-12-03T16:34:46.125] [INFO] system - Server started on port 3000
+[2020-12-03T16:34:46.779] [INFO] system - socket connected: kdhvtSHFuUN0VwX1AAAB
+[2020-12-03T16:34:52.319] [INFO] system - socket connected: hgLYH7gogyWWOJQdAAAD
+[2020-12-03T16:34:52.842] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NzYsImV4cCI6MTYwNzA3NDM3Nn0.FHADIVl4S2Fx0ktPqJ6QRc7azWsockNgDEBbwEpQOBY
+[2020-12-03T16:34:53.123] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:34:55.539] [INFO] system - socket connected: bL-IOcvDO5WDSI8PAAAF
+[2020-12-03T16:34:56.043] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODgwOTMsImV4cCI6MTYwNzA3NDQ5M30.9_ebtw0xiSm0CJ1qFHyL2IKU-2talFsLcvObLtBsmNQ
+[2020-12-03T16:34:56.050] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:34:58.905] [INFO] system - socket connected: iqDxuDgSqZ0APEgRAAAH
+[2020-12-03T16:34:59.422] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODgwOTYsImV4cCI6MTYwNzA3NDQ5Nn0.wgi2SW3NKUAI_W4uAbpcpl8nGMbTaCXrK_KCOYyp5o4
+[2020-12-03T16:34:59.427] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:38:37.309] [INFO] server - Database connected
+[2020-12-03T16:38:37.412] [INFO] system - Server started on port 3000
+[2020-12-03T16:38:40.113] [INFO] system - socket connected: JBdKlDDSs1yJlxzSAAAB
+[2020-12-03T16:38:40.668] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODgwOTksImV4cCI6MTYwNzA3NDQ5OX0.tbZYMy1qdYfhdGAKzIP44CJEBuG_ITPI3qJyYx4fb0w
+[2020-12-03T16:38:40.682] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:40:02.305] [INFO] server - Database connected
+[2020-12-03T16:40:02.322] [INFO] system - Server started on port 3000
+[2020-12-03T16:40:03.265] [INFO] system - socket connected: BD6CIDnVcUgX1rmIAAAB
+[2020-12-03T16:40:25.747] [INFO] system - socket connected: KS2utcEcO8EvC0HkAAAD
+[2020-12-03T16:40:28.390] [INFO] system - socket connected: XWGXcA7N5l4acffLAAAF
+[2020-12-03T16:40:37.327] [INFO] auth - socket login: XWGXcA7N5l4acffLAAAF - username: pomkalk
+[2020-12-03T16:40:38.228] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:41:50.903] [INFO] system - socket connected: TTpcHkPu7j7d1elcAAAH
+[2020-12-03T16:41:56.526] [INFO] auth - socket login: TTpcHkPu7j7d1elcAAAH - username: pomkalk
+[2020-12-03T16:41:57.329] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:43:27.913] [INFO] system - socket connected: cWq4jEa6L1Emon5yAAAJ
+[2020-12-03T16:43:31.543] [INFO] system - socket connected: iBwNb_BuBbMtltoCAAAL
+[2020-12-03T16:43:34.863] [INFO] system - socket connected: aZUQNtzpWskVMpQ1AAAN
+[2020-12-03T16:43:38.696] [INFO] auth - socket login: aZUQNtzpWskVMpQ1AAAN - username: pomkalk
+[2020-12-03T16:43:38.930] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:44:14.377] [INFO] server - Database connected
+[2020-12-03T16:44:14.502] [INFO] system - Server started on port 3000
+[2020-12-03T16:44:17.430] [INFO] system - socket connected: 4AZ8sSP_UWR95vitAAAB
+[2020-12-03T16:47:50.749] [INFO] server - Database connected
+[2020-12-03T16:47:50.766] [INFO] system - Server started on port 3000
+[2020-12-03T16:47:51.737] [INFO] system - socket connected: 7XYR-kMOkasfVEpbAAAB
+[2020-12-03T16:49:03.389] [INFO] server - Database connected
+[2020-12-03T16:49:03.406] [INFO] system - Server started on port 3000
+[2020-12-03T16:49:04.584] [INFO] system - socket connected: gJdUXZpbVEcHRaZyAAAB
+[2020-12-03T16:49:10.929] [INFO] auth - socket disconnected: gJdUXZpbVEcHRaZyAAAB
+[2020-12-03T16:49:11.846] [INFO] system - socket connected: gU1Sm9UtYfbk1e3EAAAD
+[2020-12-03T16:49:15.352] [INFO] auth - socket disconnected: gU1Sm9UtYfbk1e3EAAAD
+[2020-12-03T16:49:16.244] [INFO] system - socket connected: iD3yx55paxK9nYScAAAF
+[2020-12-03T16:49:26.114] [INFO] auth - socket login: iD3yx55paxK9nYScAAAF - username: pomkalk
+[2020-12-03T16:49:26.258] [WARN] auth - bad password pomkalk
+[2020-12-03T16:49:33.535] [INFO] auth - socket login: iD3yx55paxK9nYScAAAF - username: pomkalk
+[2020-12-03T16:49:33.603] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-03T16:49:39.782] [INFO] root:pomkalk:6 - logout
+[2020-12-03T16:49:39.782] [INFO] auth - socket disconnected: iD3yx55paxK9nYScAAAF
+[2020-12-03T16:49:40.599] [INFO] system - socket connected: MEdY8Tw6a9wq3DW-AAAH
+[2020-12-03T16:49:41.259] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODg5NzMsImV4cCI6MTYwNzA3NTM3M30.o3nBDL0vQWL4xoTogVV26iRudXWwjqmxvFwGDdBpLT8
+[2020-12-03T16:49:41.267] [INFO] auth - root user logged: pomkalk - id: 6
