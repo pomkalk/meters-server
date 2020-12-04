@@ -1,100 +1,195 @@
-[2020-12-03T16:26:54.534] [INFO] auth - socket login: G-rWvDf-umB1dqu0AAAN - username: pomkalk
-[2020-12-03T16:26:54.601] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:27:01.530] [INFO] system - socket connected: zkcD6JBimLrqUs8TAAAP
-[2020-12-03T16:27:01.951] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc2MTQsImV4cCI6MTYwNzA3NDAxNH0.k08DuvRwiS6f3lTX4H9jqqN2yWx7cbuLuOzsVytlTms
-[2020-12-03T16:29:48.213] [INFO] server - Database connected
-[2020-12-03T16:29:48.229] [INFO] system - Server started on port 3000
-[2020-12-03T16:29:49.034] [INFO] system - socket connected: l2ZSCoaGwV8mRIcMAAAB
-[2020-12-03T16:29:53.740] [INFO] system - socket connected: _aDWmtvxlde2WON_AAAD
-[2020-12-03T16:29:54.186] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc2MTQsImV4cCI6MTYwNzA3NDAxNH0.k08DuvRwiS6f3lTX4H9jqqN2yWx7cbuLuOzsVytlTms
-[2020-12-03T16:29:54.236] [ERROR] auth - TypeError: Cannot read property 'id' of undefined
-    at Api.authenticate (/home/pomka/dev/meters-app/meters-server/lib/api/index.js:73:26)
-    at Api.restore (/home/pomka/dev/meters-app/meters-server/lib/api/index.js:110:18)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-[2020-12-03T16:30:58.281] [INFO] server - Database connected
-[2020-12-03T16:30:58.298] [INFO] system - Server started on port 3000
-[2020-12-03T16:30:58.633] [INFO] system - socket connected: 5vLXaqXwzqAgbKhcAAAB
-[2020-12-03T16:31:47.880] [INFO] server - Database connected
-[2020-12-03T16:31:47.898] [INFO] system - Server started on port 3000
-[2020-12-03T16:31:48.971] [INFO] system - socket connected: Xfna7srCeDyiVtDhAAAB
-[2020-12-03T16:31:51.867] [INFO] system - socket connected: SB6mGUe54qdoLy12AAAD
-[2020-12-03T16:31:59.609] [INFO] auth - socket login: SB6mGUe54qdoLy12AAAD - username: pomkalk
-[2020-12-03T16:31:59.685] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:32:03.835] [INFO] system - socket connected: rwLm3qzXWQ8Iq628AAAF
-[2020-12-03T16:32:04.292] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5MTksImV4cCI6MTYwNzA3NDMxOX0._XSX_gr0rqq-JHRFT2SR60qvTtmom7xkoHaE0owzopk
-[2020-12-03T16:32:04.298] [WARN] auth - user restore not found: undefined
-[2020-12-03T16:32:23.677] [INFO] server - Database connected
-[2020-12-03T16:32:23.693] [INFO] system - Server started on port 3000
-[2020-12-03T16:32:24.674] [INFO] system - socket connected: NDcp8mhJjAtXIkU4AAAB
-[2020-12-03T16:32:25.829] [INFO] system - socket connected: 8jtIbeY128fGusPxAAAD
-[2020-12-03T16:32:29.948] [INFO] auth - socket login: 8jtIbeY128fGusPxAAAD - username: pomkalk
-[2020-12-03T16:32:30.023] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:32:32.010] [INFO] system - socket connected: LnmF83QntnWBmvHjAAAF
-[2020-12-03T16:32:32.511] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NTAsImV4cCI6MTYwNzA3NDM1MH0.DixqgPHA3blzJJoAxwYAXKmOBOmgOlZ1fXSrQCNdUY4
-[2020-12-03T16:32:32.518] [WARN] auth - user restore not found: undefined
-[2020-12-03T16:32:38.661] [INFO] server - Database connected
-[2020-12-03T16:32:38.678] [INFO] system - Server started on port 3000
-[2020-12-03T16:32:39.394] [INFO] system - socket connected: c1S1ngjVz7dOFcApAAAB
-[2020-12-03T16:32:41.588] [INFO] system - socket connected: oN5mrXcOpwuJ0iCAAAAD
-[2020-12-03T16:32:46.105] [INFO] auth - socket login: oN5mrXcOpwuJ0iCAAAAD - username: pomkalk
-[2020-12-03T16:32:46.177] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:32:48.775] [INFO] system - socket connected: FDIY7Ipqlp5vo-UsAAAF
-[2020-12-03T16:32:49.278] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NjYsImV4cCI6MTYwNzA3NDM2Nn0.WIifHrbETkn0UR-eAt5Ps6pgLJ_UZS-7WYCTqNLe5JQ
-[2020-12-03T16:32:49.563] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:32:55.841] [INFO] system - socket connected: zBe6SpdG_Y-FEv8zAAAH
-[2020-12-03T16:32:56.355] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NjksImV4cCI6MTYwNzA3NDM2OX0.SELm7O5-qwdb7ZWJj9aKub09erXpPmKcq-YPA5Y3yfc
-[2020-12-03T16:32:56.360] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:34:46.109] [INFO] server - Database connected
-[2020-12-03T16:34:46.125] [INFO] system - Server started on port 3000
-[2020-12-03T16:34:46.779] [INFO] system - socket connected: kdhvtSHFuUN0VwX1AAAB
-[2020-12-03T16:34:52.319] [INFO] system - socket connected: hgLYH7gogyWWOJQdAAAD
-[2020-12-03T16:34:52.842] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODc5NzYsImV4cCI6MTYwNzA3NDM3Nn0.FHADIVl4S2Fx0ktPqJ6QRc7azWsockNgDEBbwEpQOBY
-[2020-12-03T16:34:53.123] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:34:55.539] [INFO] system - socket connected: bL-IOcvDO5WDSI8PAAAF
-[2020-12-03T16:34:56.043] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODgwOTMsImV4cCI6MTYwNzA3NDQ5M30.9_ebtw0xiSm0CJ1qFHyL2IKU-2talFsLcvObLtBsmNQ
-[2020-12-03T16:34:56.050] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:34:58.905] [INFO] system - socket connected: iqDxuDgSqZ0APEgRAAAH
-[2020-12-03T16:34:59.422] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODgwOTYsImV4cCI6MTYwNzA3NDQ5Nn0.wgi2SW3NKUAI_W4uAbpcpl8nGMbTaCXrK_KCOYyp5o4
-[2020-12-03T16:34:59.427] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:38:37.309] [INFO] server - Database connected
-[2020-12-03T16:38:37.412] [INFO] system - Server started on port 3000
-[2020-12-03T16:38:40.113] [INFO] system - socket connected: JBdKlDDSs1yJlxzSAAAB
-[2020-12-03T16:38:40.668] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODgwOTksImV4cCI6MTYwNzA3NDQ5OX0.tbZYMy1qdYfhdGAKzIP44CJEBuG_ITPI3qJyYx4fb0w
-[2020-12-03T16:38:40.682] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:40:02.305] [INFO] server - Database connected
-[2020-12-03T16:40:02.322] [INFO] system - Server started on port 3000
-[2020-12-03T16:40:03.265] [INFO] system - socket connected: BD6CIDnVcUgX1rmIAAAB
-[2020-12-03T16:40:25.747] [INFO] system - socket connected: KS2utcEcO8EvC0HkAAAD
-[2020-12-03T16:40:28.390] [INFO] system - socket connected: XWGXcA7N5l4acffLAAAF
-[2020-12-03T16:40:37.327] [INFO] auth - socket login: XWGXcA7N5l4acffLAAAF - username: pomkalk
-[2020-12-03T16:40:38.228] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:41:50.903] [INFO] system - socket connected: TTpcHkPu7j7d1elcAAAH
-[2020-12-03T16:41:56.526] [INFO] auth - socket login: TTpcHkPu7j7d1elcAAAH - username: pomkalk
-[2020-12-03T16:41:57.329] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:43:27.913] [INFO] system - socket connected: cWq4jEa6L1Emon5yAAAJ
-[2020-12-03T16:43:31.543] [INFO] system - socket connected: iBwNb_BuBbMtltoCAAAL
-[2020-12-03T16:43:34.863] [INFO] system - socket connected: aZUQNtzpWskVMpQ1AAAN
-[2020-12-03T16:43:38.696] [INFO] auth - socket login: aZUQNtzpWskVMpQ1AAAN - username: pomkalk
-[2020-12-03T16:43:38.930] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:44:14.377] [INFO] server - Database connected
-[2020-12-03T16:44:14.502] [INFO] system - Server started on port 3000
-[2020-12-03T16:44:17.430] [INFO] system - socket connected: 4AZ8sSP_UWR95vitAAAB
-[2020-12-03T16:47:50.749] [INFO] server - Database connected
-[2020-12-03T16:47:50.766] [INFO] system - Server started on port 3000
-[2020-12-03T16:47:51.737] [INFO] system - socket connected: 7XYR-kMOkasfVEpbAAAB
-[2020-12-03T16:49:03.389] [INFO] server - Database connected
-[2020-12-03T16:49:03.406] [INFO] system - Server started on port 3000
-[2020-12-03T16:49:04.584] [INFO] system - socket connected: gJdUXZpbVEcHRaZyAAAB
-[2020-12-03T16:49:10.929] [INFO] auth - socket disconnected: gJdUXZpbVEcHRaZyAAAB
-[2020-12-03T16:49:11.846] [INFO] system - socket connected: gU1Sm9UtYfbk1e3EAAAD
-[2020-12-03T16:49:15.352] [INFO] auth - socket disconnected: gU1Sm9UtYfbk1e3EAAAD
-[2020-12-03T16:49:16.244] [INFO] system - socket connected: iD3yx55paxK9nYScAAAF
-[2020-12-03T16:49:26.114] [INFO] auth - socket login: iD3yx55paxK9nYScAAAF - username: pomkalk
-[2020-12-03T16:49:26.258] [WARN] auth - bad password pomkalk
-[2020-12-03T16:49:33.535] [INFO] auth - socket login: iD3yx55paxK9nYScAAAF - username: pomkalk
-[2020-12-03T16:49:33.603] [INFO] auth - root user logged: pomkalk - id: 6
-[2020-12-03T16:49:39.782] [INFO] root:pomkalk:6 - logout
-[2020-12-03T16:49:39.782] [INFO] auth - socket disconnected: iD3yx55paxK9nYScAAAF
-[2020-12-03T16:49:40.599] [INFO] system - socket connected: MEdY8Tw6a9wq3DW-AAAH
-[2020-12-03T16:49:41.259] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDY5ODg5NzMsImV4cCI6MTYwNzA3NTM3M30.o3nBDL0vQWL4xoTogVV26iRudXWwjqmxvFwGDdBpLT8
-[2020-12-03T16:49:41.267] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:06:42.052] [INFO] server - Database connected
+[2020-12-04T08:06:42.065] [INFO] system - Server started on port 3000
+[2020-12-04T08:07:34.720] [INFO] server - Database connected
+[2020-12-04T08:07:34.738] [INFO] system - Server started on port 3000
+[2020-12-04T08:09:35.999] [INFO] system - socket connected: miE-WEczI5_Qs2G4AAAB
+[2020-12-04T08:09:52.213] [INFO] auth - socket disconnected: miE-WEczI5_Qs2G4AAAB
+[2020-12-04T08:09:52.972] [INFO] system - socket connected: -yvQh1zfy6eSZNwAAAAD
+[2020-12-04T08:09:56.161] [INFO] auth - socket disconnected: -yvQh1zfy6eSZNwAAAAD
+[2020-12-04T08:09:56.923] [INFO] system - socket connected: o8byP_yElVr49MyKAAAF
+[2020-12-04T08:10:34.029] [INFO] auth - socket disconnected: o8byP_yElVr49MyKAAAF
+[2020-12-04T08:10:34.739] [INFO] system - socket connected: bD7PDI1LV_l63PZeAAAH
+[2020-12-04T08:10:37.846] [INFO] auth - socket login: bD7PDI1LV_l63PZeAAAH - username: pomkalk
+[2020-12-04T08:10:37.918] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:11:20.786] [INFO] root:pomkalk:6 - logout
+[2020-12-04T08:11:20.787] [INFO] auth - socket disconnected: bD7PDI1LV_l63PZeAAAH
+[2020-12-04T08:11:21.490] [INFO] system - socket connected: fvqQmWRgJlMDbBv3AAAJ
+[2020-12-04T08:11:21.568] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNDQyMzcsImV4cCI6MTYwNzEzMDYzN30.zLYcd2m3IAywgXR0JshYbVu5XPWuA-okywqrH91euMU
+[2020-12-04T08:11:21.575] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:16:00.279] [INFO] root:pomkalk:6 - logout
+[2020-12-04T08:16:00.279] [INFO] auth - socket disconnected: fvqQmWRgJlMDbBv3AAAJ
+[2020-12-04T08:16:01.048] [INFO] system - socket connected: -Sw42XnvIgMXKdAXAAAL
+[2020-12-04T08:16:01.128] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNDQyODEsImV4cCI6MTYwNzEzMDY4MX0.uTtzaRWFCphb0v-RO6qEhZ723VIhreJ7LfNlcQumVgg
+[2020-12-04T08:16:01.135] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:16:03.194] [INFO] root:pomkalk:6 - logout
+[2020-12-04T08:16:03.194] [INFO] auth - socket disconnected: -Sw42XnvIgMXKdAXAAAL
+[2020-12-04T08:16:03.952] [INFO] system - socket connected: T_2jExNd9qCaGCK9AAAN
+[2020-12-04T08:16:04.062] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNDQ1NjEsImV4cCI6MTYwNzEzMDk2MX0.xHtDgJBqLroXqYHE-9XJVM2QYHtXNWpcHpI61pjTrPU
+[2020-12-04T08:16:04.070] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:16:06.001] [INFO] root:pomkalk:6 - logout
+[2020-12-04T08:16:06.001] [INFO] auth - socket disconnected: T_2jExNd9qCaGCK9AAAN
+[2020-12-04T08:16:06.697] [INFO] system - socket connected: XwEiOixOEzpu2XGzAAAP
+[2020-12-04T08:16:06.798] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNDQ1NjQsImV4cCI6MTYwNzEzMDk2NH0.tbHv6acV03TvMN5S7NqfmWhR232a-LxiNPUWMh2H4tI
+[2020-12-04T08:16:06.806] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:17:02.319] [INFO] root:pomkalk:6 - logout
+[2020-12-04T08:17:02.319] [INFO] auth - socket disconnected: XwEiOixOEzpu2XGzAAAP
+[2020-12-04T08:17:04.897] [INFO] system - socket connected: 503AAMADRWxyg-hTAAAR
+[2020-12-04T08:17:08.033] [INFO] auth - socket login: 503AAMADRWxyg-hTAAAR - username: pomkalk
+[2020-12-04T08:17:08.099] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:18:36.257] [INFO] root:pomkalk:6 - logout
+[2020-12-04T08:18:36.258] [INFO] auth - socket disconnected: 503AAMADRWxyg-hTAAAR
+[2020-12-04T08:18:36.795] [INFO] system - socket connected: Ks2HRt7L-4GPky1HAAAT
+[2020-12-04T08:18:36.816] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNDQ2MjgsImV4cCI6MTYwNzEzMTAyOH0.nHkrn4R2yt_TzdQTu7K7PARM4qAQsMRRGsnh7yhcQKA
+[2020-12-04T08:18:36.823] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T08:31:33.505] [INFO] root:pomkalk:6 - logout
+[2020-12-04T08:31:33.505] [INFO] auth - socket disconnected: Ks2HRt7L-4GPky1HAAAT
+[2020-12-04T08:31:34.210] [INFO] system - socket connected: kRbLbKADHR216m71AAAV
+[2020-12-04T08:31:34.248] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNDQ3MTYsImV4cCI6MTYwNzEzMTExNn0.nt8Kl5OAa8KWPNSqhWcZNBoExGUK9LF7jRX7W1u4Dtg
+[2020-12-04T08:31:34.253] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:04:36.016] [INFO] server - Database connected
+[2020-12-04T11:04:36.125] [INFO] system - Server started on port 3000
+[2020-12-04T11:06:45.624] [INFO] system - socket connected: K92H6gjggeFPgy_ZAAAB
+[2020-12-04T11:06:51.549] [INFO] auth - socket login: K92H6gjggeFPgy_ZAAAB - username: pomkalk
+[2020-12-04T11:06:51.995] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:07:32.062] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:07:32.062] [INFO] auth - socket disconnected: K92H6gjggeFPgy_ZAAAB
+[2020-12-04T11:07:32.872] [INFO] system - socket connected: GytawjvQFq0tnZl5AAAD
+[2020-12-04T11:07:32.901] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ4MTEsImV4cCI6MTYwNzE0MTIxMX0.YxTmP1z0r0O1TmUn9tl7GHEjSoknD_OIVhmkYOV4ayw
+[2020-12-04T11:07:32.913] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:08:16.383] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:08:16.384] [INFO] auth - socket disconnected: GytawjvQFq0tnZl5AAAD
+[2020-12-04T11:08:17.116] [INFO] system - socket connected: vnZRQDwo69Sqv9L3AAAF
+[2020-12-04T11:08:17.146] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ4NTIsImV4cCI6MTYwNzE0MTI1Mn0.v_j9zqkyfyrfX1WbxnJRntzZjS5k8sEDHmryIzXSZVw
+[2020-12-04T11:08:17.152] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:08:17.740] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:08:17.740] [INFO] auth - socket disconnected: vnZRQDwo69Sqv9L3AAAF
+[2020-12-04T11:08:18.508] [INFO] system - socket connected: NRmn-mBw3v5UPn-cAAAH
+[2020-12-04T11:08:18.540] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ4OTcsImV4cCI6MTYwNzE0MTI5N30.N1PhPsuIc3frd2tkYsdz_JrEN_kLmgKMAL8Xt2FOjN8
+[2020-12-04T11:08:18.545] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:09:05.022] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:09:05.022] [INFO] auth - socket disconnected: NRmn-mBw3v5UPn-cAAAH
+[2020-12-04T11:09:05.788] [INFO] system - socket connected: XvwdTfHtTSlUGzBmAAAJ
+[2020-12-04T11:09:05.818] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ4OTgsImV4cCI6MTYwNzE0MTI5OH0.lZffe7t0liokmBN2nKua8aDte-2IAD01WR7ugDSV81w
+[2020-12-04T11:09:05.824] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:09:07.947] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:09:07.947] [INFO] auth - socket disconnected: XvwdTfHtTSlUGzBmAAAJ
+[2020-12-04T11:09:08.654] [INFO] system - socket connected: xN331Su4sPH7JXj-AAAL
+[2020-12-04T11:09:08.683] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ5NDUsImV4cCI6MTYwNzE0MTM0NX0.6-yD8t5X52bzLVKNMoq1gTdaNdjG2jASJdtR8qRXv74
+[2020-12-04T11:09:08.689] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:09:34.785] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:09:34.786] [INFO] auth - socket disconnected: xN331Su4sPH7JXj-AAAL
+[2020-12-04T11:09:35.528] [INFO] system - socket connected: Bu4AZHq5M4_Vi_oQAAAN
+[2020-12-04T11:09:35.559] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ5NDgsImV4cCI6MTYwNzE0MTM0OH0.8WdwtXTPVjLxT7R2dH2eKTnQlbGnxzPpp5Osz6rSTMU
+[2020-12-04T11:09:35.564] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:09:36.300] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:09:36.300] [INFO] auth - socket disconnected: Bu4AZHq5M4_Vi_oQAAAN
+[2020-12-04T11:09:36.987] [INFO] system - socket connected: 3VCRMz9GyHjSn7BGAAAP
+[2020-12-04T11:09:37.012] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ5NzUsImV4cCI6MTYwNzE0MTM3NX0.UsOhaLh74x_TJJiKZ-NpAS7-s47Fcpb1qzo5NAJCbnc
+[2020-12-04T11:09:37.018] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:11:21.125] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:11:21.126] [INFO] auth - socket disconnected: 3VCRMz9GyHjSn7BGAAAP
+[2020-12-04T11:11:21.820] [INFO] system - socket connected: SORkJHgGgAVl8623AAAR
+[2020-12-04T11:11:21.846] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTQ5NzcsImV4cCI6MTYwNzE0MTM3N30.0efeG2VPYlIpGiWzod-EMhg4ITgvBIIM7wWMhR3On6A
+[2020-12-04T11:11:21.848] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:12:31.354] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:12:31.354] [INFO] auth - socket disconnected: SORkJHgGgAVl8623AAAR
+[2020-12-04T11:12:32.090] [INFO] system - socket connected: eOcBva-a6A7grwKxAAAT
+[2020-12-04T11:12:32.123] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTUwODEsImV4cCI6MTYwNzE0MTQ4MX0.dnD9yurtcEudjwkPwuiVsY2RLpUzLiu8MYJwP539Bqo
+[2020-12-04T11:12:32.124] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:12:33.437] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:12:33.438] [INFO] auth - socket disconnected: eOcBva-a6A7grwKxAAAT
+[2020-12-04T11:12:34.140] [INFO] system - socket connected: u2N5TUG-4-ZRvuZ6AAAV
+[2020-12-04T11:12:34.169] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTUxNTIsImV4cCI6MTYwNzE0MTU1Mn0.2Mvb5Ses_0ML9B6RWjf1o_G2tG12QJudpNBh-nzeduI
+[2020-12-04T11:12:34.170] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:13:14.250] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:13:14.250] [INFO] auth - socket disconnected: u2N5TUG-4-ZRvuZ6AAAV
+[2020-12-04T11:13:14.993] [INFO] system - socket connected: cVJVRVAX5AaFi-P0AAAX
+[2020-12-04T11:13:15.026] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTUxNTQsImV4cCI6MTYwNzE0MTU1NH0.Ec9JY34EYuQM5ntvFBP9vZMr3RrUZFjotDl1mO8vCbY
+[2020-12-04T11:13:15.027] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:18:33.236] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:18:33.236] [INFO] auth - socket disconnected: cVJVRVAX5AaFi-P0AAAX
+[2020-12-04T11:18:33.956] [INFO] system - socket connected: evMD8WtbF1pA1c2GAAAZ
+[2020-12-04T11:18:33.987] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTUxOTUsImV4cCI6MTYwNzE0MTU5NX0.OR6lT-p3Ll1nCYyqp77hwKIoNpgwhCNtw20cNEcV5G0
+[2020-12-04T11:18:33.988] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:19:26.429] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:19:26.429] [INFO] auth - socket disconnected: evMD8WtbF1pA1c2GAAAZ
+[2020-12-04T11:19:27.144] [INFO] system - socket connected: 2ZUpmcFrIxlAbdi2AAAb
+[2020-12-04T11:19:27.175] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU1MTMsImV4cCI6MTYwNzE0MTkxM30.KKz3iyQicQ0Am7cdBZvKtDzALhlKwIvRORScV8kAyR4
+[2020-12-04T11:19:27.176] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:19:43.698] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:19:43.698] [INFO] auth - socket disconnected: 2ZUpmcFrIxlAbdi2AAAb
+[2020-12-04T11:19:44.389] [INFO] system - socket connected: 5kfgpL_eeUyZEpA8AAAd
+[2020-12-04T11:19:44.416] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU1NjcsImV4cCI6MTYwNzE0MTk2N30.mrL0qyVWhiD61TUhhvzWQ5UR2XmwXg3-c2hUM71terg
+[2020-12-04T11:19:44.417] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:20:07.866] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:20:07.867] [INFO] auth - socket disconnected: 5kfgpL_eeUyZEpA8AAAd
+[2020-12-04T11:20:08.586] [INFO] system - socket connected: 3PGe6uRMfD98LGtOAAAf
+[2020-12-04T11:20:08.615] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU1ODQsImV4cCI6MTYwNzE0MTk4NH0.HcOgePbKybeUZCA3_akiUtYpEuCCmNiceB8HVmUaeWI
+[2020-12-04T11:20:08.616] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:23:17.985] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:23:17.985] [INFO] auth - socket disconnected: 3PGe6uRMfD98LGtOAAAf
+[2020-12-04T11:23:18.670] [INFO] system - socket connected: hoyjhs9rIjJeuw4sAAAh
+[2020-12-04T11:23:18.699] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU2MDgsImV4cCI6MTYwNzE0MjAwOH0.syEGCX9hUDY8mia1khik_mIdEZ73bE02yDMBQ6qs1aw
+[2020-12-04T11:23:18.700] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:23:34.326] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:23:34.326] [INFO] auth - socket disconnected: hoyjhs9rIjJeuw4sAAAh
+[2020-12-04T11:23:35.021] [INFO] system - socket connected: YM7v5xOYRgsicU2xAAAj
+[2020-12-04T11:23:35.049] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU3OTgsImV4cCI6MTYwNzE0MjE5OH0.c5Y2ZtmWoDeO-zV67uZMXLKz9Dfv1sxld4B5d_LcNyk
+[2020-12-04T11:23:35.051] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:23:53.473] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:23:53.473] [INFO] auth - socket disconnected: YM7v5xOYRgsicU2xAAAj
+[2020-12-04T11:23:54.190] [INFO] system - socket connected: l-qpwSAoG4QIdtkNAAAl
+[2020-12-04T11:23:54.216] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU4MTUsImV4cCI6MTYwNzE0MjIxNX0.y0KtNH6C7m11_-0EVfOSkVEWn2cZ-CHLDZoJ_uLRANw
+[2020-12-04T11:23:54.217] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:23:55.622] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:23:55.622] [INFO] auth - socket disconnected: l-qpwSAoG4QIdtkNAAAl
+[2020-12-04T11:23:56.320] [INFO] system - socket connected: HlrYgpb72uopdADSAAAn
+[2020-12-04T11:23:56.346] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU4MzQsImV4cCI6MTYwNzE0MjIzNH0.lBu8EWjTCmcuLHVgVLvXUgN8rY_e_PuX36w64gNWzyM
+[2020-12-04T11:23:56.346] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:23:59.431] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:23:59.431] [INFO] auth - socket disconnected: HlrYgpb72uopdADSAAAn
+[2020-12-04T11:24:00.161] [INFO] system - socket connected: Bp_yz_katJqwjCrEAAAp
+[2020-12-04T11:24:00.192] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU4MzYsImV4cCI6MTYwNzE0MjIzNn0.PFC2KMQzuhfdMbrRwTSe2Vgr94h94-x1EpjX6exqnN4
+[2020-12-04T11:24:00.194] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:25:02.441] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:25:02.441] [INFO] auth - socket disconnected: Bp_yz_katJqwjCrEAAAp
+[2020-12-04T11:25:03.182] [INFO] system - socket connected: QYBOf96Tev7YEQBUAAAr
+[2020-12-04T11:25:03.239] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU4NDAsImV4cCI6MTYwNzE0MjI0MH0.A5--DsMrYPcGygCYF_6xpQ5cmcSBS_rFf3fnjOHC9x8
+[2020-12-04T11:25:03.241] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:28:00.405] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:28:00.405] [INFO] auth - socket disconnected: QYBOf96Tev7YEQBUAAAr
+[2020-12-04T11:28:01.185] [INFO] system - socket connected: 5LtQejbLshmFVgEhAAAt
+[2020-12-04T11:28:01.241] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTU5MDMsImV4cCI6MTYwNzE0MjMwM30.TRuroUvHacr0aEdNN7wRYE0U_NWwdBr699hDD2UuUeM
+[2020-12-04T11:28:01.242] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:28:36.048] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:28:36.048] [INFO] auth - socket disconnected: 5LtQejbLshmFVgEhAAAt
+[2020-12-04T11:28:36.854] [INFO] system - socket connected: Zb0XB-ATboT9ap_MAAAv
+[2020-12-04T11:28:36.930] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTYwODEsImV4cCI6MTYwNzE0MjQ4MX0.5y98YYP-rW8Ucrw2hiAitWLrXRtCp55NuMVCUXpA4fE
+[2020-12-04T11:28:36.932] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:28:54.010] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:28:54.010] [INFO] auth - socket disconnected: Zb0XB-ATboT9ap_MAAAv
+[2020-12-04T11:28:54.845] [INFO] system - socket connected: MsO_ME4F4q3EDs5WAAAx
+[2020-12-04T11:28:54.903] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTYxMTYsImV4cCI6MTYwNzE0MjUxNn0.g2bixlyBNHgz2k1K8qDOMqvzJIRHNNKkFwEsgBHyYh0
+[2020-12-04T11:28:54.905] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:28:55.281] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:28:55.281] [INFO] auth - socket disconnected: MsO_ME4F4q3EDs5WAAAx
+[2020-12-04T11:28:56.090] [INFO] system - socket connected: 2dRvoMMawTvJFEijAAAz
+[2020-12-04T11:28:56.174] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTYxMzQsImV4cCI6MTYwNzE0MjUzNH0.sMMoutb-J4TaFx9FyVC55b56UMfgT77fJtZmK8o75HU
+[2020-12-04T11:28:56.175] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:29:42.884] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:29:42.885] [INFO] auth - socket disconnected: 2dRvoMMawTvJFEijAAAz
+[2020-12-04T11:29:43.716] [INFO] system - socket connected: 0wlxuz9TRa1pSO_YAAA1
+[2020-12-04T11:29:43.760] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTYxMzYsImV4cCI6MTYwNzE0MjUzNn0.eduUXt8yn_UenmiDJv8DmTvQNBJ8w2R_zH8K53QjUq4
+[2020-12-04T11:29:43.761] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:31:09.151] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:31:09.151] [INFO] auth - socket disconnected: 0wlxuz9TRa1pSO_YAAA1
+[2020-12-04T11:31:09.902] [INFO] system - socket connected: dWzjUYfjoEelXTgdAAA3
+[2020-12-04T11:31:10.016] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTYxODMsImV4cCI6MTYwNzE0MjU4M30.lgHr7CxMfxwbTy26lm4-H66N1ZGbvKxkquyH8MSs70Y
+[2020-12-04T11:31:10.017] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:32:15.685] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:32:15.685] [INFO] auth - socket disconnected: dWzjUYfjoEelXTgdAAA3
+[2020-12-04T11:32:16.456] [INFO] system - socket connected: tBrcinveDKd3AFr-AAA5
+[2020-12-04T11:32:16.525] [INFO] auth - user try restore: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2MDcwNTYyNzAsImV4cCI6MTYwNzE0MjY3MH0.XjD5EjKo-K9wwthZBNlNeVCsMjnda54IDvYx44WP5OQ
+[2020-12-04T11:32:16.526] [INFO] auth - root user logged: pomkalk - id: 6
+[2020-12-04T11:35:42.506] [INFO] root:pomkalk:6 - logout
+[2020-12-04T11:35:42.506] [INFO] auth - socket disconnected: tBrcinveDKd3AFr-AAA5
