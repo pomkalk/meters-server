@@ -116,6 +116,7 @@ CREATE INDEX ON meters (period_id, ls, mid, type, status);
 
 -- Config
 CREATE TABLE config (
+    n INTEGER NOT NULL,
     key VARCHAR(30) PRIMARY KEY,
     valt VARCHAR(255) NULL,
     valj JSON NULL,
