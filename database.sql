@@ -1,3 +1,6 @@
+SET timezone TO '+07';
+SET TIME ZONE '+07';
+
 -- Users table;
 CREATE TABLE users (
     id  SERIAL PRIMARY KEY,
@@ -9,7 +12,8 @@ CREATE TABLE users (
     permissions VARCHAR(300) NULL,
     supplier_id INTEGER NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    deleted_at TIMESTAMPTZ NULL
 );
 
 CREATE INDEX ON users (name, username, supplier_id);
@@ -55,13 +59,15 @@ CREATE INDEX ON buildings (street_id, number, housing);
 -- Apartment table;
 CREATE TABLE apartments (
     id SERIAL PRIMARY KEY,
-    ls INTEGER NOT NULL,
+    ls INTEGER NOT NULL UNIQUE,
     name VARCHAR(255) NOT NULL DEFAULT '',
     phone VARCHAR(100) NULL,
     building_id INTEGER NOT NULL,
     number INTEGER NOT NULL,
     part VARCHAR(10) NOT NULL DEFAULT '',
     space NUMERIC NOT NULL DEFAULT 0,
+    porch INTEGER NOT NULL DEFAULT 1,
+    live INTEGER NOT NULL DEFAULT 1,
     supplier_id INTEGER NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -74,14 +80,14 @@ CREATE TABLE periods (
     id SERIAL PRIMARY KEY,
     month INTEGER NOT NULL,
     year INTEGER NOT NULL,
-    file_id INTEGER NOT NULL,
     p_start TIMESTAMPTZ NOT NULL,
     p_end TIMESTAMPTZ NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    deleted_at TIMESTAMPTZ NULL
 );
 
-CREATE INDEX ON periods (month, year, file_id, p_start, p_end);
+CREATE INDEX ON periods (month, year, p_start, p_end);
 
 
 -- Upload files for import data
@@ -98,20 +104,21 @@ CREATE TABLE imports (
 CREATE TABLE meters (
     id SERIAL PRIMARY KEY,
     period_id INTEGER NOT NULL,
+    src INTEGER NULL,
     ls INTEGER NOT NULL,
     mid INTEGER NOT NULL,
-    type INTEGER NOT NULL,
+    service INTEGER NOT NULL,
     status INTEGER NOT NULL,
     last_month INTEGER NOT NULL,
     last_year INTEGER NOT NULL,
     last_value NUMERIC NOT NULL,
-    new_value NUMERIC NOT NULL,
+    new_value NUMERIC NULL,
     new_date TIMESTAMPTZ NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-CREATE INDEX ON meters (period_id, ls, mid, type, status);
+CREATE INDEX ON meters (period_id, ls, mid, service, status);
 
 
 -- Config
@@ -123,14 +130,3 @@ CREATE TABLE config (
     valb BOOLEAN NULL,
     vali INTEGER NULL
 );
-
-
--- -- Feedbacks
--- CREATE TABLE feedbacks (
---     id SERIAL PRIMARY KEY,
---     ls INTEGER NOT NULL,
---     question TEXT NOT NULL,
-
---     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
---     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
--- );
