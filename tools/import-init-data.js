@@ -29,8 +29,9 @@ const options = [
     {n: 1, key: 'site_on', valb: true },
     {n: 2, key: 'siteoff_msg', valt: 'На сайте ведутся технические работы.'},
     {n: 3, key: 'meters_period', valt: '17,08:00,25,23:59'},
-    {n: 4, key: 'meters_msg', valt: 'Здравствуйте, к сожалению, данный сервис доступен в период с 08:00 17 числа по 23:59 25 числа каждого месяца.'},
-    {n: 5, key: 'meters_block', valt: 'Уточнить причину блокировки или приостановки счетчика вы можете по телефону в абонентском отделе ООО «УЕЗ ЖКУ г. Ленинска-Кузнецкого» - 49-2-49. Наиболее частая причина блокировки является истечение сроков поверки счетчиков.'}
+    {n: 4, key: 'meters_msg', valt: 'Здравствуйте, ввод показаний доступен в период с 08:00 17 числа по 23:59 25 числа каждого месяца.'},
+    {n: 5, key: 'meters_block', valt: 'Уточнить причину блокировки или приостановки счетчика вы можете по телефону в абонентском отделе ООО «УЕЗ ЖКУ г. Ленинска-Кузнецкого» - 49-2-49. Наиболее частая причина блокировки является истечение сроков поверки счетчиков.'},
+    {n: 6, key: 'current', vali: null}
 ]
 
 function getPeriod (m, y) {
@@ -214,6 +215,7 @@ const firstImport = async (month, year) => {
         await sql`INSERT INTO meters ${ sql(meters.splice(0, chunkSize)) }`
     }
     logger.info('Meters imported')
+    await sql`UPDATE config SET vali=${period.id} WHERE key='current'`
 }
 
 
@@ -427,15 +429,15 @@ const updateDb = async (month, year) => {
             await sql`INSERT INTO meters ${ sql(meters.splice(0, chunkSize)) }`
         }
         logger.info(`Meters data updated`)
-        
+        await sql`UPDATE config SET vali=${period.id} WHERE key='current'`
     })
 }
 
 const main = async () => {
     try {
-        let l = Array.from({length: 6}, (v, i) => ({m: i+1, y: 2020}))
+        let l = Array.from({length: 12}, (v, i) => ({m: i+1, y: 2020}))
     
-        let bar = new progress('[:bar] :percent', { total: l.length })
+        let bar = new progress('[:bar] :percent', { total: l.length, width: 80 })
 
         logger.info('Start import init data')
         logger.info(`Import init data: ${l[0].m}.${l[0].y}`)

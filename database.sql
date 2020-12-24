@@ -130,3 +130,21 @@ CREATE TABLE config (
     valb BOOLEAN NULL,
     vali INTEGER NULL
 );
+
+CREATE TABLE tokens (
+    id SERIAL PRIMARY KEY,
+    ls INTEGER NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX ON tokens (ls);
+
+CREATE TABLE feedbacks (
+    id SERIAL PRIMARY KEY,
+    ls INTEGER NOT NULL,
+    body TEXT NOT NULL,
+    read INTEGER NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX on feedbacks (ls, read);
