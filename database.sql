@@ -1,6 +1,13 @@
 SET timezone TO '+07';
 SET TIME ZONE '+07';
 
+CREATE OR REPLACE FUNCTION full_address(text, text, integer, text, integer, text)
+RETURNS text AS $$
+BEGIN
+  RETURN CONCAT($1, '. ', $2, ', д. ', CONCAT_WS('/', $3, NULLIF($4, '')), ', кв. ', CONCAT_WS('/', $5, NULLIF($6, '')));
+END;
+$$ LANGUAGE plpgsql;
+
 -- Users table;
 CREATE TABLE users (
     id  SERIAL PRIMARY KEY,
