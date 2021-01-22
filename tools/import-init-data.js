@@ -259,10 +259,10 @@ const updateDb = async (month, year) => {
     
         streets = streets.reduce((t, v) => {
             let a = dbstreets.findIndex(x => {
-                return x.type===v.type&&x.name===v.name
+                return x.type===v.type&&x.name.toLowerCase()===v.name.toLowerCase()
             })
     
-            if (a >=0 ) {
+            if (a >= 0) {
                 return t
             }
             return [...t, v]
@@ -423,6 +423,9 @@ const updateDb = async (month, year) => {
                 }
             })
         }
+
+        await sql`INSERT INTO meters_history SELECT * FROM meters`
+        await sql`DELETE FROM meters`
 
         m = Math.ceil(meters.length/chunkSize)
         for (let i=0;i<m;i++) {

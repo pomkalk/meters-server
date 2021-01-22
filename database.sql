@@ -127,6 +127,24 @@ CREATE TABLE meters (
 
 CREATE INDEX ON meters (period_id, ls, mid, service, status);
 
+CREATE TABLE meters_history (
+    id INTEGER NOT NULL,
+    period_id INTEGER NOT NULL,
+    src INTEGER NULL,
+    ls INTEGER NOT NULL,
+    mid INTEGER NOT NULL,
+    service INTEGER NOT NULL,
+    status INTEGER NOT NULL,
+    last_month INTEGER NOT NULL,
+    last_year INTEGER NOT NULL,
+    last_value NUMERIC NOT NULL,
+    new_value NUMERIC NULL,
+    new_date TIMESTAMPTZ NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX ON meters_history (id, period_id, ls, mid, service, status);
 
 -- Config
 CREATE TABLE config (
