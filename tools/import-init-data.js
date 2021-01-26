@@ -70,7 +70,7 @@ const loadDBF = (month, year) => {
     }
     if (fs.existsSync(`./import-data/${year}/${month}/data2.csv`)) {
         valuestype = 2
-        values = fs.readFileSync(`./import-data/${year}/${month}/data2.csv`).toString().split('\r\n').reduce((t, x) => {
+        values = fs.readFileSync(`./import-data/${year}/${month}/data2.csv`).toString().split('\n').reduce((t, x) => {
             if (x.length==0) return t
             return [...t, x.split(';')]
         }, [])
@@ -413,6 +413,7 @@ const updateDb = async (month, year) => {
         })
     
         if (newvalues) {
+            console.log("NEW VALUES")
             newvalues = newvalues.slice(1).map(x => {
                 if (valuestype ===1 ) {
                     let d = x[9].split('.')
@@ -433,6 +434,8 @@ const updateDb = async (month, year) => {
                     }
                 }
             })
+
+            console.log(newvalues)
 
             newvalues.forEach(x => {
                 let i = meters.findIndex(y => y.ls===x.ls&&y.mid===x.mid)
@@ -460,7 +463,8 @@ const main = async () => {
     try {
         let l = Array.from({length: 12}, (v, i) => ({m: i+1, y: 2020}))
         l.push({m: 1, y: 2021})
-
+        l = l.slice(-2)
+        
         let bar = new progress('[:bar] :percent', { total: l.length, width: 80 })
 
         logger.info('Start import init data')
@@ -486,14 +490,11 @@ const main = async () => {
 main()
 
 const asd = async () => {
-    let l = Array.from({length: 12}, (v, i) => ({m: i+1, y: 2020}))
-    let a = l.slice(1)
-    for (let i=0;i<4;i++) {
-        l = [...l, ...a]
-    }
-    console.log(l)
+    let a = fs.readFileSync(`./import-data/2021/1/data2.csv`).toString().split('\n')
+    console.log(a)
 }
 
+//asd()
 
 // SELECT a.ls, concat(s.type, '. ', s.name, ', д. ', concat_ws('/', b.number, NULLIF(b.housing, '')), ', кв. ', concat_ws('/', a.number, NULLIF(a.part, ''))), 
 // a.name, a.phone, a.space, a.porch, sp.title, m.service, m.period_id, m.last_month, m.last_year, m.last_value, m.new_value

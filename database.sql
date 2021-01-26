@@ -173,3 +173,25 @@ CREATE TABLE feedbacks (
 );
 
 CREATE INDEX on feedbacks (ls, read);
+
+CREATE TABLE news (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    body TEXT NOT NULL,
+    user_id INTEGER NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    deleted_at TIMESTAMPTZ NULL
+);
+
+CREATE INDEX ON news (title, user_id, created_at, updated_at, deleted_at);
+
+CREATE TABLE devices (
+    id SERIAL PRIMARY KEY,
+    did VARCHAR(255) NOT NULL,
+    expo VARCHAR(255) NOT NULL,
+    info json NULL,
+    news BOOLEAN DEFAULT false
+);
+
+CREATE INDEX ON devices (did, expo);
