@@ -60,13 +60,22 @@ const loadDBF = (month, year) => {
     let addr = parseDbf(fs.readFileSync(`./import-data/${year}/${month}/S_ADDR.DBF`), 'cp866')
     let sc = parseDbf(fs.readFileSync(`./import-data/${year}/${month}/S_SC.DBF`), 'cp866')
     let values = null
+    let valuestype = null
     if (fs.existsSync(`./import-data/${year}/${month}/data.csv`)) {
+        valuestype = 1
         values = fs.readFileSync(`./import-data/${year}/${month}/data.csv`).toString().split('\r\n').reduce((t, x) => {
             if (x.length==0) return t
             return [...t, x.split(';')]
         }, [])
     }
-    return [addr, sc, values]
+    if (fs.existsSync(`./import-data/${year}/${month}/data2.csv`)) {
+        valuestype = 2
+        values = fs.readFileSync(`./import-data/${year}/${month}/data2.csv`).toString().split('\r\n').reduce((t, x) => {
+            if (x.length==0) return t
+            return [...t, x.split(';')]
+        }, [])
+    }
+    return [addr, sc, values, valuestype]
 }
 
 const firstImport = async (month, year) => {
@@ -222,7 +231,7 @@ const firstImport = async (month, year) => {
 
 const updateDb = async (month, year) => {
     let q = await sql.begin(async sql => {
-        let [addr, sc, newvalues] = loadDBF(month, year)
+        let [addr, sc, newvalues, valuestype] = loadDBF(month, year)
         
         let dbsuppliers = await sql`select * from suppliers`
         let suppliers = new Set()
@@ -405,12 +414,23 @@ const updateDb = async (month, year) => {
     
         if (newvalues) {
             newvalues = newvalues.slice(1).map(x => {
-                let d = x[9].split('.')
-                return {
-                    ls: parseInt(x[7]),
-                    mid: parseInt(x[8]),
-                    new_date: new Date(parseInt(d[2]), parseInt(d[1])-1, parseInt(d[0])),
-                    new_value: parseFloat(x[10])
+                if (valuestype ===1 ) {
+                    let d = x[9].split('.')
+                    return {
+                        ls: parseInt(x[7]),
+                        mid: parseInt(x[8]),
+                        new_date: new Date(parseInt(d[2]), parseInt(d[1])-1, parseInt(d[0])),
+                        new_value: parseFloat(x[10])
+                    }
+                }
+                if (valuestype ===2 ) {
+                    let d = new Date(x[7].replace(/(\d{1,2})\.(\d{1,2})\.(\d{1,2}) (\d{1,2}):(\d{1,2}):(\d{1,2})/mg, "20$3-$2-$1T$4:$5:$6"))
+                    return {
+                        ls: parseInt(x[0]),
+                        mid: parseInt(x[1]),
+                        new_date: d,
+                        new_value: parseFloat(x[8])
+                    }
                 }
             })
 
@@ -439,7 +459,8 @@ const updateDb = async (month, year) => {
 const main = async () => {
     try {
         let l = Array.from({length: 12}, (v, i) => ({m: i+1, y: 2020}))
-    
+        l.push({m: 1, y: 2021})
+
         let bar = new progress('[:bar] :percent', { total: l.length, width: 80 })
 
         logger.info('Start import init data')
