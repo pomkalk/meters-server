@@ -191,7 +191,7 @@ CREATE TABLE devices (
     did VARCHAR(255) NOT NULL,
     expo VARCHAR(255) NOT NULL,
     info json NULL,
-    news BOOLEAN DEFAULT false
+    news BOOLEAN DEFAULT true
 );
 
 CREATE INDEX ON devices (did, expo);
