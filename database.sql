@@ -159,10 +159,13 @@ CREATE TABLE config (
 CREATE TABLE tokens (
     id SERIAL PRIMARY KEY,
     ls INTEGER NOT NULL,
+    did VARCHAR(255) NULL,
+    expo VARCHAR(255) NULL,
+    notify BOOLEAN NOT NULL DEFAULT false,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-CREATE INDEX ON tokens (ls);
+CREATE INDEX ON tokens (ls, did, expo, notify);
 
 CREATE TABLE feedbacks (
     id SERIAL PRIMARY KEY,
