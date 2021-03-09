@@ -243,12 +243,15 @@ const updateDb = async (month, year) => {
             if (s) {
                 return t
             }
-            return { name: v, title: v }
+            return [...t, { name: v, title: v }]
         }, [])
+        console.log(suppliers)
         if (suppliers.length > 0) {
+            console.log('lala')
             suppliers = await sql`INSERT INTO suppliers ${ sql(suppliers) } RETURNING *`
             suppliers.forEach(x=> {
                 logger.info('Supplier created:', x.id, x.name)
+                
             })
         }
         suppliers = await sql`select * from suppliers`
@@ -265,23 +268,37 @@ const updateDb = async (month, year) => {
                 return [...t, x]
             }
         }, [])
-    
+
         streets = streets.reduce((t, v) => {
-            let a = dbstreets.findIndex(x => {
-                return x.type===v.type&&x.name.toLowerCase()===v.name.toLowerCase()
+            let a = dbstreets.find(x => {
+                return x.type.toLowerCase()===v.type.toLowerCase()&&x.name.toLowerCase()===v.name.toLowerCase()
             })
     
-            if (a >= 0) {
-                return t
+            if (a) {
+                if (`${v.type}. ${v.name}` === `${a.type}. ${a.name}`) {
+                    return t
+                } else {
+                    return { ...t, update: [...t.update, {...v, id: a.id}]}
+                }
             }
-            return [...t, v]
-        }, [])
-        if (streets.length > 0) {
-            streets = await sql`INSERT INTO streets ${ sql(streets) } RETURNING *`
-            streets.forEach(x => {
+            return {...t, insert: [...t.insert, v]}
+        }, { insert: [], update: []})
+        
+
+        if (streets.insert.length > 0) {
+            streets2 = await sql`INSERT INTO streets ${ sql(streets.insert) } RETURNING *`
+            streets2.forEach(x => {
                 logger.info(`Streets added: ${x.type}. ${x.name}`)
             })
         }
+
+        if (streets.update.length > 0) {
+            for (let x of streets.update) {
+                await sql`UPDATE streets SET type=${x.type}, name=${x.name} WHERE id=${x.id}`
+                logger.info(`Streets updated: $${x.id}: ${x.type}. ${x.name}`)
+            }
+        }
+
         streets = await sql`SELECT * FROM streets`
     
         let dbbuildings = await sql`select * from buildings`
@@ -435,8 +452,6 @@ const updateDb = async (month, year) => {
                 }
             })
 
-            console.log(newvalues)
-
             newvalues.forEach(x => {
                 let i = meters.findIndex(y => y.ls===x.ls&&y.mid===x.mid)
                 if (i >=0 ) {
@@ -463,7 +478,8 @@ const main = async () => {
     try {
         let l = Array.from({length: 12}, (v, i) => ({m: i+1, y: 2020}))
         l.push({m: 1, y: 2021})
-        l = l.slice(-2)
+        l.push({m: 2, y: 2021})
+        //l = l.slice(-2)
         
         let bar = new progress('[:bar] :percent', { total: l.length, width: 80 })
 
