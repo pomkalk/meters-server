@@ -1,10 +1,8 @@
 const parse = require('parsedbf')
 const fs = require('fs')
 
-let a = parse(fs.readFileSync("./import-data/2020/8/S_ADDR.DBF"), "cp866")
+let a = parse(fs.readFileSync("../S_SC.DBF"), "cp866")
 
-let s = new Set()
+a = a.filter(x => x.CK===503856)
 
-a.forEach(x=>s.add(x.ORG))
-
-console.log(s)
+console.log(a)
